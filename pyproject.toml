@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "pubmed-paper-fetcher"
+version = "0.1.0"
+description = "A Python CLI tool to fetch research papers from PubMed and filter authors based on company affiliations."
+authors = ["Your Name <your.email@example.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "pubmed_paper_fetcher"}]
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.13"
+requests = "^2.31.0"
+pandas = "^2.1.1"
+beautifulsoup4 = "^4.12.2"
+
+[tool.poetry.scripts]
+get-papers-list = "pubmed_paper_fetcher.cli:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
