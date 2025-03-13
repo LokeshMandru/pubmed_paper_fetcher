@@ -12,24 +12,20 @@ A Python CLI tool to fetch research papers from PubMed based on a user query. It
 This project uses Poetry for dependency management.
 First, install Poetry (if not installed):
 
-sh
-Copy
-Edit
+
+
 pip install poetry
 Then, clone the repository and install dependencies:
 
-sh
-Copy
-Edit
+
 git clone https://github.com/YOUR_GITHUB_USERNAME/pubmed_paper_fetcher.git
 cd pubmed_paper_fetcher
 poetry install
 📌 Usage
 Run the command with a search query:
 
-sh
-Copy
-Edit
+
+
 poetry run get-papers-list "waste management"
 CLI Options
 Option	Description
@@ -38,7 +34,7 @@ Option	Description
 -f <filename> or --file <filename>	Specify output CSV filename
 Example:
 
-sh
+
 Copy
 Edit
 poetry run get-papers-list "cancer treatment" -f results.csv
